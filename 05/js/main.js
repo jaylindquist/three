@@ -59,11 +59,17 @@ function drawScene() {
 	
 	// set face colors
 	cubeGeometry.faces[0].color = new THREE.Color(0xFF0000);
-	cubeGeometry.faces[1].color = new THREE.Color(0xFFFF00);
-	cubeGeometry.faces[2].color = new THREE.Color(0xFF00FF);
-	cubeGeometry.faces[3].color = new THREE.Color(0x00FF00);
-	cubeGeometry.faces[4].color = new THREE.Color(0x00FFFF);
-	cubeGeometry.faces[5].color = new THREE.Color(0x0000FF);
+	cubeGeometry.faces[1].color = new THREE.Color(0xFF0000);
+	cubeGeometry.faces[2].color = new THREE.Color(0xFFFF00);
+	cubeGeometry.faces[3].color = new THREE.Color(0xFFFF00);
+	cubeGeometry.faces[4].color = new THREE.Color(0xFF00FF);
+	cubeGeometry.faces[5].color = new THREE.Color(0xFF00FF);
+	cubeGeometry.faces[6].color = new THREE.Color(0x00FF00);
+	cubeGeometry.faces[7].color = new THREE.Color(0x00FF00);
+	cubeGeometry.faces[8].color = new THREE.Color(0x00FFFF);
+	cubeGeometry.faces[9].color = new THREE.Color(0x00FFFF);
+	cubeGeometry.faces[10].color = new THREE.Color(0x0000FF);
+	cubeGeometry.faces[11].color = new THREE.Color(0x0000FF);
 
 	cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
 	cubeMesh.position.set(1.5, 0, -6);
