@@ -38,7 +38,7 @@ function drawScene() {
 
 	for(var iFace = 0; iFace < pyramidGeometry.faces.length; iFace++) {
 		var face = pyramidGeometry.faces[iFace];
-		
+
 		// face.a is the index of the vertex in the vertex array
 		face.vertexColors[0] = vertexColors[face.a];
 		face.vertexColors[1] = vertexColors[face.b];
@@ -49,14 +49,14 @@ function drawScene() {
 	pyramidMesh.position.set(-1.5, 0, -6);
 
 	scene.add(pyramidMesh);
-	
+
 	var cubeGeometry = new THREE.CubeGeometry(2, 2, 2);
-	
+
 	var cubeMaterial = new THREE.MeshBasicMaterial({
 		vertexColors:THREE.FaceColors,
 		side:THREE.DoubleSide
 	});
-	
+
 	// set face colors
 	cubeGeometry.faces[0].color = new THREE.Color(0xFF0000);
 	cubeGeometry.faces[1].color = new THREE.Color(0xFF0000);
@@ -73,9 +73,9 @@ function drawScene() {
 
 	cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
 	cubeMesh.position.set(1.5, 0, -6);
-	
+
 	scene.add(cubeMesh);
-	
+
 }
 
 function colorVertex(vertex) {
